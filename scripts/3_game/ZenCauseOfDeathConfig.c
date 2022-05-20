@@ -39,7 +39,7 @@ class ZenCauseOfDeathConfig
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bleeding", "from bleeding out"));
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("hunger", "starvation"));
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("thirst", "dehydration"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("woundinfection", "unknown"));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("woundinfection", "wound infection"));
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("contamination", "toxic contamination"));
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("suicide", "suicide"));
 				// Save config

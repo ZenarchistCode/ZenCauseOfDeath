@@ -45,10 +45,10 @@ modded class PlayerBase
 				cause = GetCauseOfDeathConfig().GetCauseOfDeath("zombie").CauseMessage;
 			}
 
-			//if (ammo.Contains("bullet"))
-			//{
-			//	cause = GetCauseOfDeathConfig().GetCauseOfDeath("bullet").CauseMessage;
-			//}
+			if (ammo.Contains("bullet"))
+			{
+				cause = GetCauseOfDeathConfig().GetCauseOfDeath("bullet").CauseMessage;
+			}
 
 			if (ammo.Contains("explosion"))
 			{
@@ -88,7 +88,6 @@ modded class PlayerBase
 			// Loop through causes of death and see if a non-hardcoded one is found
 			if (cause == "unknown")
 			{
-				ZenCOD_SendMessage("Cause unknown debug");
 				foreach(CauseOfDeathDef cod : GetCauseOfDeathConfig().CauseOfDeathDefs)
 				{
 					string codKey = cod.AmmoType;
