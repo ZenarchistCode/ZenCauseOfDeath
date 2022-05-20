@@ -1,0 +1,81 @@
+{
+    "CheckCauseCommand": "Check cause of death",
+    "CauseOfDeathPrefix1": "It appears",
+    "DeadPlayerName": "#survivorname",
+    "CauseOfDeathPrefix2": "cause of death is",
+    "CauseOfDeathDefs": [
+        {
+            "AmmoType": "unknown",
+            "CauseMessage": "unknown"
+        },
+        {
+            "AmmoType": "falldamage",
+            "CauseMessage": "falling from a great height"
+        },
+        {
+            "AmmoType": "melee",
+            "CauseMessage": "from blunt force trauma"
+        },
+        {
+            "AmmoType": "zombie",
+            "CauseMessage": "from zombies"
+        },
+        {
+            "AmmoType": "bullet",
+            "CauseMessage": "from a gunshot wound"
+        },
+        {
+            "AmmoType": "explosion",
+            "CauseMessage": "from an explosion"
+        },
+        {
+            "AmmoType": "grenade",
+            "CauseMessage": "from a grenade explosion"
+        },
+        {
+            "AmmoType": "landmine",
+            "CauseMessage": "from a land mine explosion"
+        },
+        {
+            "AmmoType": "transport",
+            "CauseMessage": "from being run over by a vehicle"
+        },
+        {
+            "AmmoType": "wolf",
+            "CauseMessage": "from a wolf attack"
+        },
+        {
+            "AmmoType": "bear",
+            "CauseMessage": "from being mauled by a bear"
+        },
+        {
+            "AmmoType": "fire",
+            "CauseMessage": "third-degree burns"
+        },
+        {
+            "AmmoType": "bleeding",
+            "CauseMessage": "from bleeding out"
+        },
+        {
+            "AmmoType": "hunger",
+            "CauseMessage": "starvation"
+        },
+        {
+            "AmmoType": "thirst",
+            "CauseMessage": "dehydration"
+        },
+        {
+            "AmmoType": "woundinfection",
+            "CauseMessage": "unknown"
+        },
+        {
+            "AmmoType": "contamination",
+            "CauseMessage": "toxic contamination"
+        },
+        {
+            "AmmoType": "suicide",
+            "CauseMessage": "suicide"
+        }
+    ],
+    "DebugOn": 0
+}
