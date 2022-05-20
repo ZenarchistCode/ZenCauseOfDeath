@@ -9,14 +9,14 @@ class CfgPatches
 		};
 		requiredAddons[] =
 		{
-			"DZ_Data"
+			"DZ_Data",
 		};
 	};
 };
 
 class CfgMods
 {
-	class ZenTreasureAddon
+	class ZenCauseOfDeath
 	{
 		dir = "ZenCauseOfDeath";
 		picture = "";
