@@ -7,8 +7,8 @@ class ZenCauseOfDeathConfig
 	// Config data
 	string CheckCauseCommand = "Check cause of death";
 	string CauseOfDeathPrefix1 = "It appears";
-	string DeadPlayerName = "#survivorname";
-	string CauseOfDeathPrefix2 = "cause of death is";
+	string DeadPlayerName = "this survivor's";
+	string CauseOfDeathPrefix2 = "cause of death was";
 	ref array<ref CauseOfDeathDef> CauseOfDeathDefs = new array<ref CauseOfDeathDef>;
 	bool DebugOn = false;
 
@@ -25,23 +25,23 @@ class ZenCauseOfDeathConfig
 			{ // Config file does not exist, create default file
 				// Save default values
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("unknown", "unknown"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("falldamage", "falling from a great height"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("melee", "from blunt force trauma"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("zombie", "from zombies"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bullet", "from a gunshot wound"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("explosion", "from an explosion"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("grenade", "from a grenade explosion"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("landmine", "from a land mine explosion"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("transport", "from being run over by a vehicle"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("wolf", "from a wolf attack"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bear", "from being mauled by a bear"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("fire", "third-degree burns"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bleeding", "from bleeding out"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("hunger", "starvation"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("thirst", "dehydration"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("woundinfection", "wound infection"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("contamination", "toxic contamination"));
-				CauseOfDeathDefs.Insert(new CauseOfDeathDef("suicide", "suicide"));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("falldamage", "the result of falling from a great height."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("melee", "from some kind of blunt force trauma."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("zombie", "probably the result of a zombie attack."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bullet", "from a gunshot wound..."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("explosion", "from an explosion of some kind."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("grenade", "from a grenade explosion perhaps..."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("landmine", "from a land mine explosion perhaps..."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("transport", "from being run over by a vehicle."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("wolf", "from a wolf attack maybe?"));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bear", "from being mauled by a large creature, probably a bear..."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("fire", "third-degree burns."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("bleeding", "from bleeding out."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("hunger", "starvation."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("thirst", "dehydration."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("woundinfection", "wound infection."));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("contamination", "toxic contamination. I better not get too close!"));
+				CauseOfDeathDefs.Insert(new CauseOfDeathDef("suicide", "suicide, but I could be wrong..."));
 				// Save config
 				Save();
 			}

@@ -68,12 +68,11 @@ class ActionCheckCauseOfDeath : ActionContinuousBase
             return;
         }
 
-        string codMsg = ;
         string survivorName = GetCauseOfDeathConfig().DeadPlayerName;
-        if (survivorName == "#survivorname")
-        {
-            survivorName = targetPlayer.GetIdentity().GetName() + "'s";
-        }
+        //if (survivorName == "#survivorname")  // Removed for now as it's bugged.
+        //{
+        //    survivorName = targetPlayer.GetIdentity().GetName() + "'s";
+        //}
 
         player.ZenCOD_SendMessage(GetCauseOfDeathConfig().CauseOfDeathPrefix1 + " " + survivorName + " " + GetCauseOfDeathConfig().CauseOfDeathPrefix2 + " " + targetPlayer.m_CauseOfDeath);
     }
