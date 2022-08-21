@@ -6,7 +6,6 @@ class ZenCauseOfDeathConfig
 
 	// Config data
 	string ConfigVersion = "";
-	string CheckCauseCommand = "Check cause of death";
 	string CauseOfDeathPrefix1 = "It appears";
 	string DeadPlayerPrefix = "this";
 	string MaleGender = "man's";
