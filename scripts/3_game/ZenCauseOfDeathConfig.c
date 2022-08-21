@@ -5,9 +5,12 @@ class ZenCauseOfDeathConfig
 	private const static string zenConfigName = "ZenCauseOfDeathConfig.json";
 
 	// Config data
+	string ConfigVersion = "";
 	string CheckCauseCommand = "Check cause of death";
 	string CauseOfDeathPrefix1 = "It appears";
-	string DeadPlayerName = "this survivor's";
+	string DeadPlayerPrefix = "this";
+	string MaleGender = "man's";
+	string FemaleGender = "woman's";
 	string CauseOfDeathPrefix2 = "cause of death was";
 	ref array<ref CauseOfDeathDef> CauseOfDeathDefs = new array<ref CauseOfDeathDef>;
 	bool DebugOn = false;
@@ -18,12 +21,20 @@ class ZenCauseOfDeathConfig
 		if (GetGame().IsServer())
 		{
 			if (FileExist(zenModFolder + zenConfigName))
-			{ // If config exists, load file
+			{	// If config exists, load file
 				JsonFileLoader<ZenCauseOfDeathConfig>.JsonLoadFile(zenModFolder + zenConfigName, this);
+
+				if (ConfigVersion != "2")
+				{
+					JsonFileLoader<ZenCauseOfDeathConfig>.JsonSaveFile(zenModFolder + zenConfigName + "_old", this);
+					ConfigVersion = "2";
+					Save();
+				}
 			}
 			else
 			{ // Config file does not exist, create default file
 				// Save default values
+				ConfigVersion = "2";
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("unknown", "unknown"));
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("falldamage", "the result of falling from a great height."));
 				CauseOfDeathDefs.Insert(new CauseOfDeathDef("melee", "from some kind of blunt force trauma."));

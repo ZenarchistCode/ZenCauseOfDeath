@@ -1,80 +1,83 @@
 {
+    "ConfigVersion": "2",
     "CheckCauseCommand": "Check cause of death",
     "CauseOfDeathPrefix1": "It appears",
-    "DeadPlayerName": "#survivorname",
-    "CauseOfDeathPrefix2": "cause of death is",
+    "DeadPlayerPrefix": "this",
+    "MaleGender": "man's",
+    "FemaleGender": "woman's",
+    "CauseOfDeathPrefix2": "cause of death was",
     "CauseOfDeathDefs": [
         {
             "AmmoType": "unknown",
-            "CauseMessage": "unknown"
+            "CauseMessage": "unknown."
         },
         {
             "AmmoType": "falldamage",
-            "CauseMessage": "falling from a great height"
+            "CauseMessage": "the result of falling from a great height."
         },
         {
             "AmmoType": "melee",
-            "CauseMessage": "from blunt force trauma"
+            "CauseMessage": "from some kind of blunt force trauma."
         },
         {
             "AmmoType": "zombie",
-            "CauseMessage": "from zombies"
+            "CauseMessage": "probably the result of a zombie attack."
         },
         {
             "AmmoType": "bullet",
-            "CauseMessage": "from a gunshot wound"
+            "CauseMessage": "from a gunshot wound..."
         },
         {
             "AmmoType": "explosion",
-            "CauseMessage": "from an explosion"
+            "CauseMessage": "from an explosion of some kind."
         },
         {
             "AmmoType": "grenade",
-            "CauseMessage": "from a grenade explosion"
+            "CauseMessage": "from a grenade explosion perhaps..."
         },
         {
             "AmmoType": "landmine",
-            "CauseMessage": "from a land mine explosion"
+            "CauseMessage": "from a land mine explosion perhaps..."
         },
         {
             "AmmoType": "transport",
-            "CauseMessage": "from being run over by a vehicle"
+            "CauseMessage": "from being run over by a vehicle."
         },
         {
             "AmmoType": "wolf",
-            "CauseMessage": "from a wolf attack"
+            "CauseMessage": "from a wolf attack maybe?"
         },
         {
             "AmmoType": "bear",
-            "CauseMessage": "from being mauled by a bear"
+            "CauseMessage": "from being mauled by a large creature, probably a bear..."
         },
         {
             "AmmoType": "fire",
-            "CauseMessage": "third-degree burns"
+            "CauseMessage": "third-degree burns."
         },
         {
             "AmmoType": "bleeding",
-            "CauseMessage": "from bleeding out"
+            "CauseMessage": "from bleeding out."
         },
         {
             "AmmoType": "hunger",
-            "CauseMessage": "starvation"
+            "CauseMessage": "starvation."
         },
         {
             "AmmoType": "thirst",
-            "CauseMessage": "dehydration"
+            "CauseMessage": "dehydration."
         },
         {
             "AmmoType": "woundinfection",
-            "CauseMessage": "unknown"
+            "CauseMessage": "wound infection."
         },
         {
             "AmmoType": "contamination",
-            "CauseMessage": "toxic contamination"
+            "CauseMessage": "toxic contamination."
         },
         {
             "AmmoType": "suicide",
-            "CauseMessage": "suicide"
+            "CauseMessage": "suicide, but I could be wrong..."
         }
     ],
     "DebugOn": 0

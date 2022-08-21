@@ -85,7 +85,7 @@ modded class PlayerBase
 				cause = GetCauseOfDeathConfig().GetCauseOfDeath("fire").CauseMessage;
 			}
 
-			// Loop through causes of death and see if a non-hardcoded one is found
+			// Loop through causes of death and see if one is found
 			if (cause == "unknown")
 			{
 				foreach(CauseOfDeathDef cod : GetCauseOfDeathConfig().CauseOfDeathDefs)

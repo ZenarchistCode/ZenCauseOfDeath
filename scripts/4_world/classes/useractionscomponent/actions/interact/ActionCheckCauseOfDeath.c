@@ -29,7 +29,7 @@ class ActionCheckCauseOfDeath : ActionContinuousBase
 
     override string GetText()
     {
-        return GetCauseOfDeathConfig().CheckCauseCommand;
+        return "#STR_CauseOfDeath_Txt";
     }
 
     override bool ActionCondition(PlayerBase player, ActionTarget target, ItemBase item)
@@ -68,13 +68,17 @@ class ActionCheckCauseOfDeath : ActionContinuousBase
             return;
         }
 
-        string survivorName = GetCauseOfDeathConfig().DeadPlayerName;
-        //if (survivorName == "#survivorname")  // Removed for now as it's bugged.
+        //string survivorName = "";
+        //if (survivorName == "#survivorname")  // Removed for now as it requires further syncing between server/client using RPCs.
         //{
         //    survivorName = targetPlayer.GetIdentity().GetName() + "'s";
         //}
 
-        player.ZenCOD_SendMessage(GetCauseOfDeathConfig().CauseOfDeathPrefix1 + " " + survivorName + " " + GetCauseOfDeathConfig().CauseOfDeathPrefix2 + " " + targetPlayer.m_CauseOfDeath);
+        string gender = GetCauseOfDeathConfig().MaleGender;
+        if (!targetPlayer.IsMale())
+            gender = GetCauseOfDeathConfig().FemaleGender;
+
+        player.ZenCOD_SendMessage(GetCauseOfDeathConfig().CauseOfDeathPrefix1 + " " + GetCauseOfDeathConfig().DeadPlayerPrefix + " " + gender + " " + GetCauseOfDeathConfig().CauseOfDeathPrefix2 + " " + targetPlayer.m_CauseOfDeath);
     }
 };
 
